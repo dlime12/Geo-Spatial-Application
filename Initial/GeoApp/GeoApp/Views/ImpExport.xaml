@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GeoApp.Views.ImpExport"
+             Style="{StaticResource contentStyle}">
+    <ContentPage.Content>
+        <StackLayout Style="{StaticResource stackStyle}">
+            <Label Text="Location Data"
+                   FontSize = "30"
+                VerticalOptions="Center" 
+                HorizontalOptions="CenterAndExpand"
+                   Style="{StaticResource labelStyle}"/>
+            <Button Clicked = "GeoButtonClicked"
+                    Text = "GeoJson"
+                    Style="{StaticResource buttonStyle}"/>
+            <Entry x:Name = "emailEntered"
+                       Keyboard="Text"
+                       Placeholder="Enter Email"></Entry>
+            <Button Clicked = "SendButtonClicked"
+                    Text = "Send"
+                    Style="{StaticResource buttonStyle}"/>
+            <Label Text="Import JSON file"
+                   FontSize = "24"
+                VerticalOptions="Center" 
+                HorizontalOptions="CenterAndExpand" 
+                   Style="{StaticResource labelStyle}"/>
+            <Label Text="JSON File name test"
+                   FontSize = "10"
+                VerticalOptions="Center" 
+                   x:Name="testingLabel"
+                HorizontalOptions="CenterAndExpand" 
+                   Style="{StaticResource labelStyle}"/>
+            <Button Clicked = "ImportButtonClicked"
+                    Text = "Import"
+                    Style="{StaticResource buttonStyle}"/>
+            <ListView x:Name="pointView">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Text="{Binding Path=Value}"/>
+
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

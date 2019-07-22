@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:navigation"
+             x:Class="GeoApp.MainPage"
+             Title="Master Page"
+             MasterBehavior="Popover">
+    <MasterDetailPage.Master>
+        <ContentPage Title="Master" Style="{StaticResource contentStyle}">
+            <ContentPage.Content>
+                <StackLayout Style="{StaticResource stackStyle}">
+                    <Label Text="GEO APP" Style="{StaticResource labelStyle}"></Label>
+                    <Button Text="Map" Clicked="Button_Clicked" Style="{StaticResource buttonStyle}"></Button>
+                    <Button Text="Collected Data" Clicked="Button_Clicked_2" Style="{StaticResource buttonStyle}"></Button>
+                    <Button Text="Import/Export" Clicked="Button_Clicked_3" Style="{StaticResource buttonStyle}"></Button>
+                    <Button Text="Settings" Clicked="Button_Clicked_4" Style="{StaticResource buttonStyle}"></Button>
+                </StackLayout>
+            </ContentPage.Content>
+        </ContentPage>
+    </MasterDetailPage.Master>
+
+    <MasterDetailPage.Detail>
+        <NavigationPage>
+            <x:Arguments>
+                <ContentPage Title="view"></ContentPage>
+            </x:Arguments>
+        </NavigationPage>
+    </MasterDetailPage.Detail>
+
+</MasterDetailPage>

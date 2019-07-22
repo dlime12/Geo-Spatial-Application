@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GeoApp.Views.Test">
+    <ContentPage.Content>
+                     <StackLayout>
+<!--            <Label Text="Location Data"
+                   FontSize = "30"
+                VerticalOptions="Center" 
+                HorizontalOptions="CenterAndExpand" />
+            <Button Clicked = "LoadButtonClicked"
+                    Text = "LOAD"
+                    HorizontalOptions = "Center"/>
+            <Button Clicked = "GeoButtonClicked"
+                    Text = "GeoJson"
+                    HorizontalOptions = "Center"/>
+            <Button Clicked = "SendButtonClicked"
+                    Text = "Send"
+                    HorizontalOptions = "Center"/>
+            <ListView x:Name="pointView">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Text="{Binding Path=Value}"/>
+
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>-->
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

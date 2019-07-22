@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GeoApp.App">
+    <Application.Resources>
+        <ResourceDictionary>
+            <Style x:Key="buttonStyle" TargetType="Button">
+                <Setter Property="TextColor" Value="#748cab" />
+                <Setter Property="BackgroundColor" Value="#0d1321"/>
+                <Setter Property="VerticalOptions" Value="Start"/>
+                <Setter Property="HorizontalOptions" Value="FillAndExpand"/>
+                <Setter Property="BorderRadius" Value="20"/>
+                <Setter Property="BorderWidth" Value="5"/>
+                <Setter Property="BorderColor" Value="#748cab"/>
+            </Style>
+            <Style x:Key="labelStyle" TargetType="Label">
+                <Setter Property="Font" Value="Large"/>
+                <Setter Property="TextColor" Value="#0d1321"/>
+                <Setter Property="HorizontalTextAlignment" Value="Center"/>
+                <Setter Property="Margin" Value="0,0,0,20"/>
+            </Style>
+            <Style x:Key="contentStyle" TargetType="ContentPage">
+                <Setter Property="BackgroundColor" Value="#3e5c76"/>
+            </Style>
+            <Style x:Key="navStyle" TargetType="NavigationPage">
+                <Setter Property="BarBackgroundColor" Value="#0d1321"/>
+                <Setter Property="BackgroundColor" Value="#3e5c76"/>
+                <Setter Property="Icon" Value="#748cab"/>
+            </Style>
+            <Style x:Key="stackStyle" TargetType="StackLayout">
+                <Setter Property="BackgroundColor" Value="#3e5c76"/>
+                <Setter Property="VerticalOptions" Value="Fill"/>
+                <Setter Property="HorizontalOptions" Value="Fill"/>
+                <Setter Property="Margin" Value="10,30,10,10"/>
+            </Style>
+            <Style x:Key="tabStyle" TargetType="TabbedPage">
+                <Setter Property="BackgroundColor" Value="#3e5c76"/>
+            </Style>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

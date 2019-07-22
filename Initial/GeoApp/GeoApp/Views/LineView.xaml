@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GeoApp.Views.LineView">
+    <ContentPage.Content>
+        <ScrollView >
+            <StackLayout Padding="25">
+                <Label Text="Add Line"
+                       TextColor = "Black"
+                       FontSize="20"
+                       VerticalOptions="Center" 
+                       HorizontalOptions="CenterAndExpand" />
+                <Label Text="NAME *"
+                       TextColor ="Black"
+                       FontSize="15"
+                       HorizontalOptions="Start"/>
+                <Entry x:Name = "nameEntered" 
+                    Placeholder="Name Of Item">
+                    <Entry.Keyboard>
+                        <Keyboard x:FactoryMethod="Create">
+                            <x:Arguments>
+                                <KeyboardFlags>Suggestions,CapitalizeWord</KeyboardFlags>
+                            </x:Arguments>
+                        </Keyboard>
+                    </Entry.Keyboard>
+                </Entry>
+                
+                <Label Text="CUSTOM META DATA"
+                       TextColor = "Black"
+                       FontSize="15"
+                       HorizontalOptions="Start"/>
+                <Entry x:Name = "floatEntered"
+                       Keyboard="Numeric"
+                       Placeholder="float"> </Entry>
+                <Entry x:Name = "stringEntered"
+                       Keyboard="Text"
+                       Placeholder="string"> </Entry>
+                <Entry x:Name = "intEntered"
+                       Keyboard="Numeric"
+                       Placeholder="int"> </Entry>
+                <StackLayout Orientation="Horizontal"  HorizontalOptions="FillAndExpand">
+                    <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand">
+                        <Label Text="LOCATION *"
+                               TextColor = "Black"
+                                FontSize="15"
+                                HorizontalOptions="Start"/>
+                    </StackLayout>
+                    
+                <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand">
+                    <Button Clicked = "WatcherButtonClicked"
+                            Text="Watcher"
+                            HorizontalOptions="EndAndExpand"/>
+                </StackLayout>
+                    
+                <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand">
+                    <Button Clicked = "SetButtonClicked"
+                            Text="Set"
+                            HorizontalOptions="EndAndExpand"/>
+                </StackLayout>
+                </StackLayout>
+                <Entry x:Name = "accuracyLabel"
+                       FontSize = "10"
+                       IsEnabled = "True"
+                       Placeholder = "Accuracy" />
+                <Entry x:Name = "longitudeLabel"
+                       FontSize = "10"
+                       IsEnabled = "True"
+                       Placeholder = "Longitude" />
+                <Entry x:Name = "latitudeLabel"
+                       FontSize = "10"
+                       IsEnabled = "True"
+                       Placeholder = "Latitude" />
+                <Entry x:Name = "flatitudeLabel"
+                       IsEnabled = "True"
+                       FontSize = "10"
+                       Placeholder = "Flatitude" />
+                
+                <StackLayout Orientation="Horizontal"  HorizontalOptions="FillAndExpand">
+                    <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand">
+                           <Button Clicked = "AddStartLineButtonClicked"
+                                   x:Name = "pointButton1"
+                                   Text = "Add Start Of Line"
+                                   HorizontalOptions = "Start"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand">
+                        <Label x:Name = "pointLabel1"
+                                Text="Added"
+                               FontSize = "20"
+                               IsVisible = "false"
+                                VerticalOptions = "EndAndExpand"
+                                HorizontalOptions="Start"/>
+                        
+                    </StackLayout>
+                </StackLayout>
+                    
+                    
+               <StackLayout Orientation="Horizontal"  HorizontalOptions="FillAndExpand">
+                    <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand">
+                           <Button Clicked = "AddEndLineButtonClicked"
+                                   x:Name = "pointButton2"
+                                   Text = "  Add End Of Line  "
+                                   HorizontalOptions = "Start"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Vertical"  HorizontalOptions="FillAndExpand">
+                        <Label x:Name = "pointLabel2"
+                                Text="Added"
+                               FontSize = "20"
+                               IsVisible = "false"
+                               VerticalOptions = "EndAndExpand"
+                                HorizontalOptions="Start"/>
+                        
+                    </StackLayout>
+                </StackLayout>
+                    
+
+                <Button Clicked = "AddButtonClicked"
+                        Text = "Add Line"
+                        VerticalOptions = "End"
+                        HorizontalOptions = "CenterAndExpand"/>
+                <Label x:Name = "lineLabel1"
+                    IsVisible = "false"
+                        />
+                <Label x:Name = "lineLabel2"
+                    IsVisible = "false"
+                        />
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
