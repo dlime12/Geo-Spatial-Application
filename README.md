@@ -2,4 +2,4 @@
 
 Customised GeoApp for QUT Environmental, Earth, and Biological Science students.
 
-For techinical support and privacy policy, refer to https://github.com/kittaye/GeoApp.
+For techinical information and privacy policy, refer to https://github.com/kittaye/GeoApp.
